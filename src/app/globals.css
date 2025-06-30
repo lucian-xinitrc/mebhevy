@@ -116,10 +116,10 @@ a {
   box-shadow:0 0 10px 0 #159cfc;
 }
 
-
 /* Header */
 
 .header {
+  width:100%;
   height:70vh;
   padding-top:10%;
   color:#159cfc;
