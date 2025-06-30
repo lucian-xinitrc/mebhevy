@@ -1,11 +1,11 @@
 :root {
-  --background: #ffffff;
+  --background: #2447D1;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1e202c; /* #1e202c */
     --foreground: #ededed;
   }
 }
@@ -34,6 +34,187 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.navbar {
+  width:100%;
+  height:10vh;
+  padding:20px;
+}
+
+.navbar h1 {
+  float:left;
+  font-size:40px;
+  margin-left:30px;
+}
+
+.left {
+  float:left;
+  padding:10px;
+}
+
+.right {
+  float:right;
+  padding:10px;
+}
+
+.nav-link {
+  padding:10px;
+  margin:10px;
+  font-size:20px;
+  font-weight:bold;
+  color:#159cfc;
+}
+
+.searchButton {
+  transition:0.7s;
+  border-radius:50px;
+  height:40px;
+  width:40px;
+  background-color:#1e202c;
+  border:2px solid #11121a;
+}
+
+.searchButton text {
+  display:none;
+  float:left;
+}
+
+
+
+
+.searchButton:hover {
+  transition:0.7s;
+  border-radius:50px;
+  height:40px;
+  width:200px;
+  background-color:#1e202c;
+  border:2px solid #11121a;
+  text-align:right;
+  padding:0 20px;
+} 
+
+.searchButton:hover > text{
+  transition:0.7s;
+  display:block;
+  
+} 
+
+.signupButton {
+  transition:0.7s;
+  padding:10px 30px;
+  background-color:#791ff7;
+  margin-left:10px;
+  border-radius:50px;
+  font-weight:bold;
+  border:2px solid #791ff7;
+}
+
+.signupButton:hover {
+  transition:0.7s;
+  box-shadow:0 0 10px 0 #159cfc;
+}
+
+
+/* Header */
+
+.header {
+  height:70vh;
+  padding-top:10%;
+  color:#159cfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:40px;
+  text-align:center;
+}
+
+.header h3 {
+  font-size:20px;
+  color:purple;
+  font-weight:bold;
+}
+
+.textBoxy {
+  font-size:15px;
+  margin-left:35%;
+  margin-right:35%;
+  font-weight:bold;
+}
+
+gray {
+  color:gray;
+}
+
+
+.language {
+  height:10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.language button {
+  margin:10px;
+  padding:10px;
+}
+
+
+.headerFooter {
+  background-color:black;
+  padding:40px;
+}
+
+.headerFooter h3 {
+  margin-left:100px;
+  padding-top:8px;
+}
+
+.conFooterHeader {
+  width:800px;
+  display:inline-flex;
+
+}
+
+.conFooterHeader a {
+  display:flex;
+  justify-content: center;
+  border-radius:50px;
+  height:40px;
+  transition:0.7s;
+  width:40px;
+  margin-left:20px;
+  background-color: white;
+  color:black;
+  border:0px;
+  font-size:25px;
+  padding:7px 5px;
+  border-radius:50px;
+}
+
+.conFooterHeader a text{
+  display:none;
+  font-size:15px;
+  font-weight:bold;
+}
+
+
+.conFooterHeader a:hover > text {
+
+  display:flex;
+  color:black;
+}
+
+
+.conFooterHeader a:hover {
+  transition:0.7s;
+  width:auto;
+  padding:10px 20px ;
+  color:white;
+  background-color:white;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
