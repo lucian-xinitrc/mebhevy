@@ -199,7 +199,7 @@ gray {
 
 .conFooterHeader a:hover {
   transition:0.7s;
-  width:350px;
+  width:50px;
   padding:10px 20px ;
   color:white;
   background-color:white;
@@ -214,5 +214,11 @@ gray {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    width:100%;
   }
 }
