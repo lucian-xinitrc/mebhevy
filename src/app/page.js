@@ -3,12 +3,15 @@ import Header from '../components/header';
 //import Main from '../components/navbar';
 //import Footer from '../components/navbar';
 import Image from "next/image";
+import "./globals.css";
 
 export default function Home() {
   return (
     <>
-    <Navbar />
-    <Header />
+      <section className="app">
+        <Navbar />
+        <Header />
+      </section>
     </>
   );
 }

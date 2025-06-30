@@ -18,7 +18,7 @@ const Navbar = () => {
 			</section>
 			<section className="right">
 				{links.map(({ href, label }) => (
-			        <Link className="nav-link" key={href} href={href}>
+			        <Link className="nav-link" href={href}>
 			          {label}
 			        </Link>
 			      ))}
