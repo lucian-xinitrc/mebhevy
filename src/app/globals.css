@@ -191,7 +191,6 @@ gray {
 .conFooterHeader {
   width:800px;
   display:inline-flex;
-
 }
 
 .conFooterHeader a {
@@ -241,6 +240,90 @@ gray {
 @media only screen and (max-width: 900px) {
   .header {
     width:100%;
+    padding-top:2%;
+  }
+
+  .header h3 {
+    text-align:center;
+    padding:0% 10%;
+  }
+  .header h1{
+    text-align:center;
+    padding:5% 10%;
+  }
+
+  .textBoxy {
+    text-align:center;
+    margin-left:15%;
+    margin-right:15%;
+  }
+
+  .navbar {
+    transition:0.7s;
+    display:block;
+    height:10vh;
+    overflow:hidden;
+    box-shadow:0 0 50px 0 black;
+  }
+
+  .left {
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+  }
+
+  .navbar h1{
+    float:center;
+    font-size:30px;
+    margin-bottom:20px;
+    margin-left:0;
+  }
+
+  .navbar:hover {
+    transition:0.7s;
+    height:400px;
+  }
+
+  .right {
+    height:auto;
+    width:100%;
+    display:block;
+  }
+
+  .nav-link {
+    height:auto;
+    width:100%;
+    display:block;
+  }
+
+  .headerFooter {
+    padding:5% 0;
+    display:block;
+    margin-left:0;
+  }
+
+  .headerFooter h3 {
+    margin-left:5%;
+    padding-top:8px;
+  }
+
+
+  .conFooterHeader {
+    padding:0;
+    margin:0;
+  }
+
+  .conFooterHeader a:hover {
+    width:40px;
+    transition:0.7s;
+    background-color:black;
+    color:white;
+  }
+
+  .conFooterHeader a:hover > text{
+    display:none;
   }
 
 }
