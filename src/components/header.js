@@ -22,7 +22,7 @@ const Header = () => {
   			label: (
 		      <>
 		        <FaLinkedinIn /> 
-		        <text>/in/lucian-florin-cusmir-fullstackdev</text>
+		        <text>lucian-florin-cusmir-fullstackdev</text>
 		      </>
 		    ),
   		},

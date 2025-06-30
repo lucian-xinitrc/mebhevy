@@ -57,53 +57,67 @@ a {
 }
 
 .right {
+  display:inline-flex;
   float:right;
   padding:10px;
 }
 
 .nav-link {
   padding:10px;
-  margin:10px;
+  margin:5px;
   font-size:20px;
   font-weight:bold;
   color:#159cfc;
 }
 
-.searchButton {
+.search {
   transition:0.7s;
   border-radius:50px;
+  height:50px;
+  width:50px;
+  background-color:#1e202c;
+  border:2px solid #11121a;
+  padding:5px;
+  display:inline-flex;
+}
+
+.search:hover {
+  transition:0.7s;
+  width:250px;
+}
+
+.searchButton {
+  border:0px;
+  transition:0.7s;
+  border-radius:50px;
+  float:right;
   height:40px;
   width:40px;
   background-color:#1e202c;
-  border:2px solid #11121a;
 }
 
-.searchButton text {
+.search input {
   display:none;
+  margin-left:10px;
   float:left;
+  background-color:#1e202c;
+  border:0px;
+  padding:0px;
 }
 
+.search input:focus {
+  outline:none;
+}
 
-.searchButton:hover {
-  transition:0.7s;
-  border-radius:50px;
-  height:40px;
-  width:200px;
-  background-color:#1e202c;
-  border:2px solid #11121a;
-  text-align:right;
-  padding:0 20px;
-} 
-
-.searchButton:hover > text{
-  transition:0.7s;
-  display:block;
-  
+.search:hover > input{
+  display:flex;
 } 
 
 .signupButton {
   transition:0.7s;
+  margin-top:5px;
   padding:10px 30px;
+  height:40px;
   background-color:#791ff7;
   margin-left:10px;
   border-radius:50px;
@@ -121,7 +135,7 @@ a {
 .header {
   width:100%;
   height:70vh;
-  padding-top:10%;
+  padding-top:5%;
   color:#159cfc;
   display: flex;
   flex-direction: column;
@@ -150,8 +164,8 @@ gray {
 
 
 .language {
-  height:10vh;
   display: flex;
+  height:10vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -166,6 +180,7 @@ gray {
 .headerFooter {
   background-color:black;
   padding:40px;
+  max-height:10vh;
 }
 
 .headerFooter h3 {
@@ -196,6 +211,7 @@ gray {
 }
 
 .conFooterHeader a text{
+  transition:0.7s;
   display:none;
   font-size:15px;
   font-weight:bold;
@@ -203,14 +219,15 @@ gray {
 
 .conFooterHeader a:hover {
   transition:0.7s;
-  width:50px;
-  padding:10px 20px ;
+  width:350px;
+  padding:10px 2px;
   color:white;
   background-color:white;
 }
 
 .conFooterHeader a:hover > text {
-  display:flex;
+  transition:0.7s;
+  display:block;
   color:black;
 }
 

@@ -22,7 +22,10 @@ const Navbar = () => {
 			          {label}
 			        </Link>
 			      ))}
-			      <button className="searchButton"><text>Insert text</text><FaSearch /></button>
+			      <div className="search">
+			      	<input placeholder="Search..."/>
+			      	<button className="searchButton"><FaSearch /></button>
+			      </div>
 			      <button className="signupButton">Sign Up</button>
 			</section>
 		</nav>
