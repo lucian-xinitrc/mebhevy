@@ -80,8 +80,6 @@ a {
 }
 
 
-
-
 .searchButton:hover {
   transition:0.7s;
   border-radius:50px;
@@ -199,20 +197,17 @@ gray {
   font-weight:bold;
 }
 
-
-.conFooterHeader a:hover > text {
-
-  display:flex;
-  color:black;
-}
-
-
 .conFooterHeader a:hover {
   transition:0.7s;
-  width:auto;
+  width:350px;
   padding:10px 20px ;
   color:white;
   background-color:white;
+}
+
+.conFooterHeader a:hover > text {
+  display:flex;
+  color:black;
 }
 
 

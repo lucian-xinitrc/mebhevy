@@ -7,6 +7,44 @@ import { FaInstagram } from "react-icons/fa6";
 import "../app/globals.css";
 
 const Header = () => {
+	const links = [
+		{
+		    href: '/',
+		    label: (
+		      <>
+		        <MdEmail />
+		        <text>cusmirlucian@gmail.com</text>
+		      </>
+		    ),
+		  },
+  		{ 
+  			href: 'https://www.linkedin.com/in/lucian-florin-cusmir-fullstackdev', 
+  			label: (
+		      <>
+		        <FaLinkedinIn /> 
+		        <text>/in/lucian-florin-cusmir-fullstackdev</text>
+		      </>
+		    ),
+  		},
+  		{ 
+  			href: 'https://github.com/lucian-xinitrc', 
+  			label: (
+		      <>
+		        <FaGithub /> 
+		        <text>github.com/lucian-xinitrc</text>
+		      </>
+		    ), 
+  		},
+  		{ 
+  			href: 'https://instagram.com', 
+  			label: (
+		      <>
+		        <FaInstagram /> 
+		        <text>@mebhevy</text>
+		      </>
+		    ), 
+  		},
+	]
 	return (
 		<>
 			<section className="header">
@@ -24,10 +62,11 @@ const Header = () => {
 			<section className="headerFooter">
 				<section className="conFooterHeader">
 					<h3>Join with us: </h3>
-					<a href="/"><MdEmail /> <text>cusmirlucian@gmail.com</text></a>
-					<a href="https://www.linkedin.com/in/lucian-florin-cusmir-fullstackdev"><FaLinkedinIn /> <text>/in/lucian-florin-cusmir-fullstackdev</text></a>
-					<a href="https://github.com/lucian-xinitrc"><FaGithub /> <text>github.com/lucian-xinitrc</text></a>
-					<a href="https://instagram.com"><FaInstagram /> <text>@mebhevy</text></a>
+					{links.map(({ href, label }) => (
+				        <a key={href} href={href}>
+				          {label}
+				        </a>
+			      	))}
 				</section>
 			</section>
 		</>
