@@ -9,7 +9,6 @@ const Navbar = () => {
   		{ href: '/', label: 'Services' },
   		{ href: '/', label: 'Prices' },
   		{ href: '/', label: 'Contact' },
-
 	]
 	return (
 		<nav className="navbar">

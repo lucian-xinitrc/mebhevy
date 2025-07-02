@@ -1,6 +1,8 @@
 const Main = () => {
 	return (
-
+		<section className="main">
+			
+		</section>
 	)
 }
 
