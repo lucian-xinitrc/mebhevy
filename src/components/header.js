@@ -60,8 +60,9 @@ const Header = () => {
 					<button>RO</button>
 			</section>
 			<section className="headerFooter">
+				<h3 className="mobileon">Join with us: </h3>
 				<section className="conFooterHeader">
-					<h3>Join with us: </h3>
+					<h3 className="mobileoff">Join with us: </h3>
 					{links.map(({ href, label }) => (
 				        <a key={href} href={href}>
 				          {label}

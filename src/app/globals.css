@@ -134,7 +134,7 @@ a {
 
 .header {
   width:100%;
-  height:70vh;
+  height:100vh;
   padding-top:5%;
   color:#159cfc;
   display: flex;
@@ -494,6 +494,14 @@ gray {
   color:black;
 }
 
+.mobileon {
+  display:none;
+}
+
+.mobileoff {
+  display:block;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -562,24 +570,47 @@ gray {
   }
 
   .headerFooter {
-    padding:5% 0;
     display:block;
+    padding:5% 0;
+    max-height:400px;
     margin-left:0;
+    height:200px;
+    justify-content: inherit;
   }
 
   .headerFooter h3 {
-    margin-left:5%;
+    margin-left:0;
+    width:100%;
+    text-align:center;
     padding-top:8px;
   }
 
+  .mobileon {
+    display:block;
+    height:10vh;
+  }
+
+  .mobileoff {
+    display:none;
+  }
 
   .conFooterHeader {
+    margin-left:0;
+    padding:0;
+    margin:0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+  }
+
+  .confooterHeader a {
     padding:0;
     margin:0;
   }
 
   .conFooterHeader a:hover {
     width:40px;
+
     transition:0.7s;
     background-color:black;
     color:white;
