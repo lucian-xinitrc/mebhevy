@@ -421,7 +421,7 @@ gray {
   padding:0 20%;
 }
 
-.center {
+.centerFooter {
   display:flex;
   justify-content: center;
   width:100%;
@@ -429,6 +429,11 @@ gray {
 
 
 .footer-links {
+  padding:10px 20%;
+  float:right;
+}
+
+.contact-links {
   padding:10px 20%;
   float:right;
 }
@@ -582,6 +587,44 @@ gray {
 
   .conFooterHeader a:hover > text{
     display:none;
+  }
+
+  .searchSection {
+    display:block;
+  }
+
+  .searchHeadings {
+    width:100%;
+  }
+
+  .searchBarBox {
+    width:100%;
+  }
+
+  .centerHow {
+    padding:10% 20%;
+  }
+
+  .card {
+    padding:0 10%;
+    margin:10% 0;
+  }
+
+  .cardImage {
+    margin-top:15%;
+  }
+
+  .centerHow {
+    display:block;
+  }
+
+  .footer-links {
+    padding:10px 40%;
+    float:right;
+  }
+
+  .centerFooter {
+    display:block;
   }
 
 }

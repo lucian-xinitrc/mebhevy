@@ -47,7 +47,7 @@ const Footer = () => {
 	return (
 		<>
 			<section className="footer">
-				<div className="center">
+				<div className="centerFooter">
 					<div className="footerCard">
 						<h1>Mebhevy</h1>
 						<p>We provide the best web development and hosting services</p>
@@ -74,7 +74,7 @@ const Footer = () => {
 					<div className="footerCard">
 						<h1>Meet the team</h1>
 						<div className="center">
-							<div className="footer-links">
+							<div className="contact-links">
 								<Link className="footer-link" href="/">
 									Contact
 								</Link>
