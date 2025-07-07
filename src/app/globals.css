@@ -162,7 +162,6 @@ gray {
   color:gray;
 }
 
-
 .language {
   display: flex;
   height:10vh;
@@ -231,9 +230,264 @@ gray {
 }
 
 .main {
-  height:100vh;
+  height:auto;
 }
 
+.titles {
+  text-align:center;
+  margin:5%;
+  margin-top:0px;
+}
+
+.titles h1 {
+  display:block;
+  font-size:100px;
+  color:#1e202c;
+  height:200px;
+  align-items:center;
+  background-color: transparent; /* No background fill */
+            -webkit-text-stroke: 3px #ffffff; /* White border around text */
+  text-stroke: 3px #ffffff; /* Standard property for text border */
+  text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.8), 
+      -2px -2px 4px rgba(0, 0, 0, 0.8),
+      2px -2px 4px rgba(0, 0, 0, 0.8),
+       -2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.titles h2 {
+  /*margin-top:-150px;*/
+  font-size:40px;
+  display:block;
+  background-color:black;
+}
+
+.how {
+  height:90%;
+  width:100%;
+  padding:2% 10%;
+  background-color:black;
+  
+  align-items: center;
+}
+
+.centerHow {
+  display:flex;
+  justify-content: center;
+}
+
+.card {
+  width:100%;
+  overflow:auto;
+  margin:2%;
+  border:2px solid white;
+  padding:5% 3% 0 3%;
+}
+
+.cardImage {
+  display:flex;
+  justify-content: center;
+}
+
+.logo {
+  width:50%;
+  height:50%;
+  text-align:center;
+  border-radius:100px;
+  border:3px solid white;
+  padding:20px;
+}
+
+.cardHeader h1{
+  text-align:center;
+  font-size:30px;
+  padding:5% 0;
+}
+
+.cardBody p {
+  text-align:center;
+  display:block;
+}
+
+.cardFooter {
+  display:flex;
+  justify-content: center;
+  padding:5%;
+}
+
+.cardFooter a, button{
+  text-decoration:none;
+  padding:5%;
+}
+
+/* Search Down section */
+
+.searchSection {
+  width:100%;
+  /* background-color:#1E2o2C; */
+  background-color: black;
+  display:flex;
+  padding:7%;
+  justify-content: center;
+  height:10%;
+}
+
+.searchHeadings {
+  display:block;
+  width:30%;
+  padding:6px 0px 0px 0;
+  height:100px;
+}
+
+.searchHeadings h1 {
+  text-align:center;
+  font-size:30px;
+  padding:0;
+  color:white;
+
+}
+
+.searchHeadings p {
+  font-size:12px;
+  font-weight:bold;
+  display:block;
+  text-align:center;
+}
+
+.searchBarBox {
+  height:100px;
+  padding:1% 0px 0px 0;
+  width:80%;
+  display:flex;
+  justify-content:center;
+}
+
+.searchBarInput {
+  background-color:#1e202c;
+  border:2px solid #11121a;
+  padding:10px;
+  height:40px;
+  border-radius:50px;
+  width:70%;
+}
+
+.searchBarInput:focus {
+  outline:none;
+}
+
+.searchBarButton {
+  transition:0.7s;
+  padding:0px 30px;
+  height:40px;
+  background-color:#791ff7;
+  margin-left:10px;
+  border-radius:50px;
+  font-weight:bold;
+  border:2px solid #791ff7;
+}
+
+.footer {
+  padding:30% 10% 1% 10%;
+  background-color: black;
+}
+
+.lasttext {
+  text-align:center;
+  padding:5% 10px 1%;
+  font-weight:slim;
+}
+
+.footerCard {
+  display:block;
+  width:100%;
+  text-align:center;
+  margin:0 2%;
+  height:300px;
+  
+}
+
+.footerCard h1 {
+  display:block;
+  font-size:40px;
+  color:white;
+  width:100%;
+  padding:5%;
+}
+
+.footerCard p {
+  display:block;
+  text-align:center;
+  width:100%;
+  padding:0 20%;
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+
+.footer-links {
+  padding:10px 20%;
+  float:right;
+}
+
+.footer-link {
+  transition:0.4s;
+  display:block;
+  text-align:left;
+  padding:10px;
+}
+
+.footer-link:hover {
+  transition:0.4s;
+  font-weight:bold;
+}
+
+.footerCardContact {
+  width:auto;
+  padding:30px;
+  display:inline-flex;
+
+}
+
+.footerCardContact a {
+  display:flex;
+  justify-content: center;
+  border-radius:50px;
+  height:40px;
+  transition:0.7s;
+  width:40px;
+  margin-left:20px;
+  background-color: white;
+  color:black;
+  border:0px;
+  font-size:25px;
+  padding:7px 5px;
+  border-radius:50px;
+}
+
+.footerCardContact a text{
+  transition:0.7s;
+  display:none;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.footerCardContact a:hover {
+  transition:0.7s;
+  width:190px;
+  padding:10px 2px;
+  color:white;
+  background-color:white;
+}
+
+.footerCardContact a:hover > text {
+  transition:0.7s;
+  display:block;
+  color:black;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

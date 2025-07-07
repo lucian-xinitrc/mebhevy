@@ -5,10 +5,10 @@ import "../app/globals.css";
 
 const Navbar = () => {
 	const links = [
-  		{ href: '/', label: 'Home' },
-  		{ href: '/', label: 'Services' },
-  		{ href: '/', label: 'Prices' },
-  		{ href: '/', label: 'Contact' },
+  		{ id: "1", href: '/', label: 'Home' },
+  		{ id: "2", href: '/', label: 'Services' },
+  		{ id: "3", href: '/', label: 'Prices' },
+  		{ id: "4", href: '/', label: 'Contact' },
 	]
 	return (
 		<nav className="navbar">
@@ -16,8 +16,8 @@ const Navbar = () => {
 				<h1>MebHevy</h1>
 			</section>
 			<section className="right">
-				{links.map(({ href, label }) => (
-			        <Link className="nav-link" href={href}>
+				{links.map(({ id, href, label }) => (
+			        <Link className="nav-link" key={id} href={href}>
 			          {label}
 			        </Link>
 			      ))}
